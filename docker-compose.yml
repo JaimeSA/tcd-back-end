@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tcdbackend:
+    image: ${DOCKER_REGISTRY-}tcdbackend
+    build:
+      context: .
+      dockerfile: ./Dockerfile
